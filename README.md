@@ -9,5 +9,12 @@ coverY: 0
 
 # 🏫 Interview School
 
-Interviewing is a skill that takes practice and time. Find my timeline for practicing below:
+Interviewing is a skill that takes practice and time. I usually try to give about 3 months lead time to prepare for my interviews.&#x20;
 
+My timeline for summer 2024 can be found below:
+
+1. May - June 2023: revise DSA concepts
+2. June - July 2023: start working on Grind75 + Neetcode.io roadmap
+3. July - October 2023: applying to internships
+
+You can find my curated list of practice questions [here.](miscellaneous/revision-questions.md)
