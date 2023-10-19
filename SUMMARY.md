@@ -5,6 +5,9 @@
 ## Algorithms
 
 * [Quick Select](algorithms/quick-select.md)
+* [Binary Search](algorithms/binary-search.md)
+* [Sorting](algorithms/sorting.md)
+* [Intervals](algorithms/intervals.md)
 
 ## Data Structures
 
