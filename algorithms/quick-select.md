@@ -1,7 +1,7 @@
 ---
 description: >-
-  Quick select is typically useful for questions that ask for the top K elements
-  or some variation of that question
+  Quick select often comes up when the question asks for the first/last K
+  elements or the Kth largest/smallest element
 ---
 
 # Quick Select
@@ -12,23 +12,25 @@ $$
 T(n) = T(\frac{n}{2}) + O(n)
 $$
 
-* Best/Average: $$O(n)$$
-* Worst: $$O(n^2)$$
+* Best/Average: $$O(n)$$ can guaranteed by shuffling the array
+* Worst: $$O(n^2)$$if sorted
 
 ## Techniques
 
-1. Arrange largest elements in front
+### Kth Element
 
-## Partitioning algorithms
+Arrange largest elements in front by inverting the pivot comparison. This is a common problem type that tests if you know exactly how the partitioning algorithm works.
+
+## Partitioning Algorithms
 
 {% hint style="info" %}
-Pick a pivot, partition elements smaller than the pivot to the left and elements larger to the right of the pivot
+Pick a pivot, partition elements smaller than the pivot to the left, and elements larger to the right of the pivot
 {% endhint %}
 
 {% tabs %}
 {% tab title="Lomuto" %}
 {% hint style="info" %}
-Treat `idx` as a pseudo pivot position so every element that is less than the actual pivot moves before it.
+`idx-1` is the pivot index after performing the partitioning the array. Think of `idx` as the position for the next element that is smaller than the pivot value
 {% endhint %}
 
 * Easier to implement
@@ -36,12 +38,16 @@ Treat `idx` as a pseudo pivot position so every element that is less than the ac
 {% code lineNumbers="true" %}
 ```python
 def select(start, end):
+    # Randomly choose a pivot value to guarantee O(n)
     random = randint(start, end)
+    # Swap the pivot value to the end
     points[end], points[random] = points[random], points[end]
-    pivot_distance = euclidean(points[end]) # fix the value
+    # Calculate the value of the pivot
+    pivot_value = calculate(points[end])
     idx = start
     for i in range(start, end + 1):
-        if euclidean(points[i]) <= pivot_distance:
+        # If current value less than pivot, then swap to idx position
+        if calculate(points[i]) <= pivot_value:
             points[i], points[idx] = points[idx], points[i]
             idx += 1
     return idx - 1
@@ -85,7 +91,3 @@ partition(start, end):
 {% endcode %}
 {% endtab %}
 {% endtabs %}
-
-## Optimisations
-
-1. Guarantee $$O(n)$$: shuffle array

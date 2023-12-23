@@ -23,7 +23,7 @@ layout:
 
 # 🍕 Getting Started
 
-> Interviewing is a skill that takes practice and time. It helps to be able to spot the recurring patterns and how to best tackle them. This guide aims to provide a comprehensive look at the various topics and patterns of interview and prepare you for other aspects of interviewing like system design and behavioral.
+Interviewing is a skill that takes practice and time. It helps to be able to spot the recurring patterns and how to best tackle them. This guide aims to provide a comprehensive look at the various topics and patterns of interview and prepare you for other aspects of interviewing like system design and behavioral.
 
 ## About Me
 
@@ -31,7 +31,7 @@ My name is Jia Hao. I am a computer science undergraduate student from the Natio
 
 During an internship in the summer of 2023, I started seriously practicing LeetCode and various interview components like system design and behavioral. This intensive preparation helped me to secure two internships: one at a HFT and the other at a big tech company.
 
-Nowadays, I solve LeetCode to keep my mind sharp and to have fun!
+Nowadays, I solve LeetCode to keep my mind sharp and to have fun! I started this guide to help formalize my own learning and also help make this knowledge more accessible to others.
 
 ## Using this Guide
 

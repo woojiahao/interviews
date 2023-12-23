@@ -1,7 +1,7 @@
 ---
 description: >-
-  Binary search problems are tricky to spot but once spotted, focus on figuring
-  out how to partition the array
+  Binary search typically appears when the array is sorted or its left and right
+  halves both possess the same properties.
 ---
 
 # Binary Search
@@ -15,21 +15,43 @@ $$
 ## Take note…
 
 * Is array sorted?
-  * If not, can you sort it and still preserve the information?
+  * If not, can you sort it and still preserve information?
 * Can the array be separated into two distinct parts where the first half satisfies a condition while the other does not?
 
 ## Techniques
 
-1. Peak finding using `nums[0]` and `nums[-1]` as markers (see Find Minimum in Rotated Sorted Array and Search in Rotated Sorted Array)
-   * Move in the direction where the neighbour is larger
-   * Does not work if there are duplicate elements (don’t know where to move)
-   * Finds only a local peak (might not be the global peak intended)
-2. Matrix questions (matrix to be sorted in some way) see Search a 2D Matrix
-   1. Treat the matrix as a 1D array
-      * Start with `(0, 0)` and end with `(n - 1, n - 1)`
-      * See Kth Smallest Element in a Sorted Matrix for how to use the values as the range
-   2. Try using the values of the arrays as a range or treating using the pure index like (0, 0) to (n - 1, n - 1) has the last index as `(n * n) - 1`
-3. Find last occurrence of element that satisfies condition > find first occurrence of element that does not satisfy condition
+### Peak finding
+
+Move towards the direction of larger/smaller values relative to the mid-point chosen.
+
+* This does not work with arrays that can have duplicates (naively picking a direction to move in could be disastrous)
+* This can only produce local peaks
+
+### Peak finding in rotated arrays
+
+{% hint style="info" %}
+Rotated arrays refer to arrays where the values after index `i` are moved to the front of the array instead, preserving their order\
+\
+`[1, 2, 3, 4, 5]` can be rotated to become `[3, 4, 5, 1, 2]`
+{% endhint %}
+
+The arrays always exhibit the following properties:
+
+* `nums[0] > nums[-1]`
+* There are essentially 2 sorted arrays, the boundary can be found by comparing `nums[i]` against `nums[0]`
+  * If `nums[i] > nums[0]`, `i` is in the first half, otherwise, it is in the second half
+
+Problems commonly test to see if you can identify these properties (such as [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) or [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/))
+
+* Use `nums[0]` as a marker for determining where `i` is in the array
+
+### Apply binary search to matrices
+
+Try using the values of the arrays as a range or treating using the pure index like `(0, 0)` to `(n - 1, n - 1)` has the last index as `(n * n) - 1`
+
+* These problems are harder to notice but a common property that can be found is when the matrix is sorted in some order (row)
+
+Problems can include [searching a fully sorted 2D matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) or modifying binary search to search the matrix in a consistent manner such as [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/solutions/1322101/c-java-python-maxheap-minheap-binary-search-picture-explain-clean-concise/)
 
 ## General template
 
@@ -101,7 +123,8 @@ Always from `[0, n)`
 * Consider the case when `l == r` and we can still move, where would `l` be? Where would `r` be? Is that information useful to us?
 *   If `<=` used, must include the following to avoid infinite loop
 
-    * Must track the answer internally and move pointers by `m - 1` and `m + 1`
+    * Must track the answer internally
+    * Must move pointers by `m - 1` and `m + 1` to avoid infinite looping
 
     ```python
     l, r = i + 1, n - 1
@@ -117,13 +140,17 @@ Always from `[0, n)`
 {% endtab %}
 
 {% tab title="Pointer Shifts" %}
-`mid` is left leaning: `mid = left + (right - left) // 2`&#x20;
+`mid` is **left leaning:**
+
+`mid = left + (right - left) // 2`&#x20;
 
 * Set `right = mid` and `left = mid + 1`
 * Useful when dealing with cases where the `right` could also be the answer
 * I.e. finding first instance of element
 
-`mid` is right leaning: `mid = left + (right - left) // 2 + 1`&#x20;
+`mid` is **right leaning**:&#x20;
+
+`mid = left + (right - left) // 2 + 1`&#x20;
 
 * Set `left = mid` and `right = mid - 1`
 * Useful when dealing with cases where `left` could also be the answer
