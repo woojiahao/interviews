@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🏫 Interviews](README.md)
+* [🍕 Getting Started](README.md)
 
 ## Algorithms
 

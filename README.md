@@ -21,7 +21,7 @@ layout:
     visible: true
 ---
 
-# 🏫 Interviews
+# 🍕 Getting Started
 
 > Interviewing is a skill that takes practice and time. It helps to be able to spot the recurring patterns and how to best tackle them. This guide aims to provide a comprehensive look at the various topics and patterns of interview and prepare you for other aspects of interviewing like system design and behavioral.
 
