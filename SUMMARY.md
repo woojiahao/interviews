@@ -16,7 +16,7 @@
 
 ## Data Structures
 
-* [Page 1](data-structures/page-1.md)
+* [Union-Find Disjoint Set (UFDS)](data-structures/union-find-disjoint-set-ufds.md)
 
 ## System Design
 
