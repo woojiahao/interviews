@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🏫 Interview School](README.md)
+* [🏫 Interviews](README.md)
 
 ## Algorithms
 
