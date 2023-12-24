@@ -42,8 +42,8 @@
 
 ## 🍣 Other Technical Topics
 
-* [General Tips](other-technical-topics/general-tips/README.md)
-  * [Runtime Predictions](other-technical-topics/general-tips/runtime-predictions.md)
+* [General Problem Solving](other-technical-topics/general-problem-solving.md)
+* [Runtime Predictions](other-technical-topics/runtime-predictions.md)
 * [System Design](other-technical-topics/system-design/README.md)
   * [SQL](other-technical-topics/system-design/sql.md)
   * [Accessing APIs](other-technical-topics/system-design/accessing-apis.md)

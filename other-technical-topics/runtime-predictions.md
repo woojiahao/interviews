@@ -6,7 +6,9 @@ description: >-
 
 # Runtime Predictions
 
+{% hint style="info" %}
 These predictions are taken from this [Codeforces article.](https://codeforces.com/blog/entry/21344)
+{% endhint %}
 
 | n <=     | Allowed Time Complexity   |
 | -------- | ------------------------- |
