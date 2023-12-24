@@ -1,7 +1,7 @@
 ---
 description: >-
   Binary search typically appears when the array is sorted or its left and right
-  halves both possess the same properties.
+  halves both possess the same properties
 ---
 
 # Binary Search

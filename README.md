@@ -27,7 +27,7 @@ Interviewing is a skill that takes practice and time. It helps to be able to spo
 
 ## About Me
 
-My name is Jia Hao. I am a computer science undergraduate from the National University of Singapore. Before May 2023, I had not touched LeetCode much before (I could barely handle Easy problems), even though I had years of experience developing software.&#x20;
+My name is Jia Hao. I am a computer science undergraduate from the National University of Singapore. Before May 2023, I had not touched LeetCode much before, even though I had years of experience developing software. I could barely handle easy problems and that was an issue.
 
 During an internship in the summer of 2023, I started seriously practicing LeetCode and various interview components like system design and behavioral. This intensive preparation helped me to secure two internships: one at a HFT and the other at a big tech company.
 
@@ -37,9 +37,11 @@ Nowadays, I solve LeetCode to keep my mind sharp and to have fun! I started this
 
 This guide aims to give you the starting fundamentals of solving the commonly seen coding interview questions along with some of my insights for the other components of interviewing.
 
-I recommend tackling each topic one at a time and focusing on understanding the concepts behind each question you solve, rather than trying to shoot for solving a high number of problems with low understanding. Once you have felt like you have mastered the fundamentals, feel free to move on to trying a diverse set of problems from lists like [Neetcode](https://neetcode.io/roadmap) and [Grind75](https://www.techinterviewhandbook.org/grind75).
+I recommend tackling each topic one at a time and focusing on understanding the concepts behind each question you solve, rather than trying to shoot for solving a high number of problems with low understanding. You can find the list of questions and study plan under [review-questions](review-questions/ "mention"). Once you have felt like you have mastered the fundamentals, feel free to move on to trying a diverse set of problems from lists like [Neetcode](https://neetcode.io/roadmap) and [Grind75](https://www.techinterviewhandbook.org/grind75).
 
-Note that I will not be covering fundamental concepts like how arrays work, those are assumed knowledge when starting this guide.
+{% hint style="info" %}
+I will not be covering fundamental concepts like how arrays work as those are assumed knowledge. Instead, I will focus on the techniques you can apply when approach such problems
+{% endhint %}
 
 Additionally, I recommend starting your preparations really early. I have included my timeline for securing my internships for summer 2024 below.
 
@@ -54,3 +56,5 @@ Additionally, I recommend starting your preparations really early. I have includ
 ## Preface
 
 Internship hunting + interviewing takes a lot of practice and a whole lot of luck. I was ghosted/rejected by 99% of the 200 companies I had applied to. While it is easy to feel discouraged when you see these numbers, I think it's even more important to notice that while luck is a factor, you should be minimizing your potential for failure by working on the things you can control such as your ability to solve problems under pressure.
+
+With that, I wish you all the best and I hope that this guide helps you to secure an internship! :tada::tada:

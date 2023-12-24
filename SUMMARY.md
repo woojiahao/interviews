@@ -9,13 +9,13 @@
 
 * [Binary Search](algorithms/binary-search.md)
 * [Sorting](algorithms/sorting.md)
+* [Quick Select](algorithms/quick-select.md)
 * [Intervals](algorithms/intervals.md)
 * [Recursion](algorithms/recursion.md)
 * [Binary](algorithms/binary.md)
 * [Graph](algorithms/graph.md)
 * [Geometry](algorithms/geometry.md)
 * [Dynamic Programming](algorithms/dynamic-programming.md)
-* [Quick Select](algorithms/quick-select.md)
 
 ## 🥞 Data Structures
 

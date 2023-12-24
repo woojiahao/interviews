@@ -2,7 +2,7 @@
 description: >-
   Sorting algorithms aren't usually tested alone. They are often paired with
   another problem type and the goal is to really see if you're able to think
-  about the algorithms in a wider context.
+  about the algorithms in a wider context
 ---
 
 # Sorting

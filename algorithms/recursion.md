@@ -2,7 +2,7 @@
 description: >-
   Recursion is quite a typical problem and can be rather tricky to get right on
   the first go. Try visualizing recursive algorithms by tracing them out on
-  paper with simpler recursions.
+  paper with simpler recursions
 ---
 
 # Recursion

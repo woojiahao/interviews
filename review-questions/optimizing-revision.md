@@ -17,7 +17,7 @@ For me, I use a Notion database to track every question, breaking down my unders
 3. **Alternatives:** potential alternative solutions that are present; usually I refer to the solutions section of LeetCode to get a sensing of the available alternatives
 4. **Remarks:** any remarks to future you as you are referring back to this list
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-12-24 at 12.38.50.png" alt=""><figcaption><p>How I structured my Notion database</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-12-24 at 12.38.50.png" alt=""><figcaption></figcaption></figure>
 
 ## Revision strategy
 

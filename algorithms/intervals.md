@@ -1,7 +1,7 @@
 ---
 description: >-
   Interval problems aren't easy to spot and require some practice, try looking
-  for ways to model the problem as a set of ranges/intervals.
+  for ways to model the problem as a set of ranges/intervals
 ---
 
 # Intervals

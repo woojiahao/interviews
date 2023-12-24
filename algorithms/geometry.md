@@ -2,7 +2,7 @@
 description: >-
   Geometry problems are quite niche and I have really only ever encountered a
   small handful of them myself. Advent of Code 2023 was where I developed these
-  pointers.
+  pointers
 ---
 
 # Geometry

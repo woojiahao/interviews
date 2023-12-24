@@ -2,7 +2,7 @@
 description: >-
   Graph algorithms are quite common and usually fall under the following
   algorithms. You will usually be required to modify these algorithms to fit the
-  problem but it's good to know the fundamentals.
+  problem but it's good to know the fundamentals
 ---
 
 # Graph
