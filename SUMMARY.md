@@ -1,13 +1,12 @@
 # Table of contents
 
 * [🍕 Getting Started](README.md)
-* [🍥 Review Questions](review-questions.md)
-* [Optimizing Revision](optimizing-revision.md)
-* [FAQs](faqs.md)
+* [🍥 Review Questions](review-questions/README.md)
+  * [Optimizing Revision](review-questions/optimizing-revision.md)
+  * [FAQs](review-questions/faqs.md)
 
 ## 🥨 Algorithms
 
-* [Quick Select](algorithms/quick-select.md)
 * [Binary Search](algorithms/binary-search.md)
 * [Sorting](algorithms/sorting.md)
 * [Intervals](algorithms/intervals.md)
@@ -16,6 +15,7 @@
 * [Graph](algorithms/graph.md)
 * [Geometry](algorithms/geometry.md)
 * [Dynamic Programming](algorithms/dynamic-programming.md)
+* [Quick Select](algorithms/quick-select.md)
 
 ## 🥞 Data Structures
 

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Interview School is a collection of notes for Software Engineering interview
-  preparation created by Jia Hao
+  A collection of notes for preparing for coding interviews, created by Jia Hao,
+  a computer science undergraduate from the National University of Singapore.
 cover: >-
   https://images.unsplash.com/photo-1516630294856-68665df1db49?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw1fHxvc2xvfGVufDB8fHx8MTcwMzM5Mzg5N3ww&ixlib=rb-4.0.3&q=85
 coverY: 0
@@ -27,7 +27,7 @@ Interviewing is a skill that takes practice and time. It helps to be able to spo
 
 ## About Me
 
-My name is Jia Hao. I am a computer science undergraduate student from the National University of Singapore. Before May 2023, I had not touched LeetCode much before (I could barely handle Easy problems), even though I had years of experience developing software.&#x20;
+My name is Jia Hao. I am a computer science undergraduate from the National University of Singapore. Before May 2023, I had not touched LeetCode much before (I could barely handle Easy problems), even though I had years of experience developing software.&#x20;
 
 During an internship in the summer of 2023, I started seriously practicing LeetCode and various interview components like system design and behavioral. This intensive preparation helped me to secure two internships: one at a HFT and the other at a big tech company.
 

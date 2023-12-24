@@ -25,7 +25,7 @@ You may also notice that there are duplicate questions across topics. My recomme
 
 One last piece of advice I have when attempting these problems is to first read the associated sections I have included in this guide and then trying the techniques out. While you can try "discovering" the patterns yourself, having a guided format will help you structure your thinking going into each problem.
 
-### Week 1
+## Week 1
 
 <details>
 
@@ -89,7 +89,7 @@ One last piece of advice I have when attempting these problems is to first read 
 
 </details>
 
-### Week 2
+## Week 2
 
 <details>
 
@@ -158,7 +158,7 @@ One last piece of advice I have when attempting these problems is to first read 
 
 </details>
 
-### Week 3
+## Week 3
 
 <details>
 
@@ -217,7 +217,7 @@ One last piece of advice I have when attempting these problems is to first read 
 
 </details>
 
-### Week 4
+## Week 4
 
 <details>
 
