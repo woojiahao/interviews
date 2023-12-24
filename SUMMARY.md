@@ -1,8 +1,11 @@
 # Table of contents
 
 * [🍕 Getting Started](README.md)
+* [🍥 Review Questions](review-questions.md)
+* [Optimizing Revision](optimizing-revision.md)
+* [FAQs](faqs.md)
 
-## Algorithms
+## 🥨 Algorithms
 
 * [Quick Select](algorithms/quick-select.md)
 * [Binary Search](algorithms/binary-search.md)
@@ -14,18 +17,29 @@
 * [Geometry](algorithms/geometry.md)
 * [Dynamic Programming](algorithms/dynamic-programming.md)
 
-## Data Structures
+## 🥞 Data Structures
 
+* [Arrays](data-structures/arrays.md)
+* [Strings](data-structures/strings.md)
+* [Matrices](data-structures/matrices.md)
+* [Linked Lists](data-structures/linked-lists.md)
+* [Hash Tables](data-structures/hash-tables.md)
+* [Stacks](data-structures/stacks.md)
+* [Queues](data-structures/queues.md)
+* [Trees](data-structures/trees.md)
+* [Graphs](data-structures/graphs.md)
+* [Heap](data-structures/heap.md)
+* [Tries](data-structures/tries.md)
 * [Union-Find Disjoint Set (UFDS)](data-structures/union-find-disjoint-set-ufds.md)
 
-## System Design
+## 🍣 Other Technical Topics
 
-* [Page 2](system-design/page-2.md)
+* [System Design](other-technical-topics/system-design.md)
+* [Operating Systems](other-technical-topics/operating-systems.md)
+* [Runtime Predictions](other-technical-topics/runtime-predictions.md)
+* [General Tips](other-technical-topics/general-tips.md)
 
-## Behavioural
+## 🍿 Behavioural
 
-* [Page 3](behavioural/page-3.md)
-
-## Miscellaneous
-
-* [Revision Questions](miscellaneous/revision-questions.md)
+* [Preparation](behavioural/preparation.md)
+* [Common Questions](behavioural/common-questions.md)

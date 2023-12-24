@@ -3,12 +3,12 @@ description: >-
   Interview School is a collection of notes for Software Engineering interview
   preparation created by Jia Hao
 cover: >-
-  https://images.unsplash.com/photo-1694802554563-d950f9122f8e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTc0NjQyNDR8&ixlib=rb-4.0.3&q=85
+  https://images.unsplash.com/photo-1516630294856-68665df1db49?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw1fHxvc2xvfGVufDB8fHx8MTcwMzM5Mzg5N3ww&ixlib=rb-4.0.3&q=85
 coverY: 0
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: false
   description:
@@ -38,6 +38,8 @@ Nowadays, I solve LeetCode to keep my mind sharp and to have fun! I started this
 This guide aims to give you the starting fundamentals of solving the commonly seen coding interview questions along with some of my insights for the other components of interviewing.
 
 I recommend tackling each topic one at a time and focusing on understanding the concepts behind each question you solve, rather than trying to shoot for solving a high number of problems with low understanding. Once you have felt like you have mastered the fundamentals, feel free to move on to trying a diverse set of problems from lists like [Neetcode](https://neetcode.io/roadmap) and [Grind75](https://www.techinterviewhandbook.org/grind75).
+
+Note that I will not be covering fundamental concepts like how arrays work, those are assumed knowledge when starting this guide.
 
 Additionally, I recommend starting your preparations really early. I have included my timeline for securing my internships for summer 2024 below.
 
