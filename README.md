@@ -31,7 +31,7 @@ Interviewing is a skill that takes practice and time. It helps to be able to spo
 
 My name is Jia Hao. I am a computer science undergraduate from the National University of Singapore. Before May 2023, I had not touched LeetCode much before, even though I had years of experience developing software. I could barely handle easy problems and that was an issue.
 
-During summer 2023, I started seriously practicing LeetCode and various interview components like system design and behavioral. This intensive preparation helped me to receive two internships: one at a HFT and the other at a big tech company.
+During summer 2023, I started seriously practicing LeetCode and various interview components like system design and behavioral. This intensive preparation helped me to receive offers from two large companies.
 
 Nowadays, I solve LeetCode to keep my mind sharp and to have fun! I started this guide to help formalize my own learning and also help make this knowledge more accessible to others. All of these notes have been compiled from months of self-study and working on LeetCode. I hope that it can help someone with their interviewing journey.
 
