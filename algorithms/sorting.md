@@ -85,7 +85,7 @@ $$
 
 * Pick a pivot, partition array around pivot value, and repeat for all halves till 1 element
 * Same recurrence as merge sort
-* If duplicates allowed, use [dutch flag algorithm](https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/), otherwise, can refer to the partitioning algorithms used in [Quick Select](quick-select.md)
+* If duplicates allowed, use [dutch flag algorithm](https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/), otherwise, can refer to the partitioning algorithms used in [quick-select.md](quick-select.md "mention")
 * Worst case can be $$O(n^2)$$ if array already sorted
 {% endtab %}
 

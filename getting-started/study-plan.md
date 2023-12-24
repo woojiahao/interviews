@@ -5,7 +5,7 @@ description: >-
   next topic
 ---
 
-# 🍥 Review Questions
+# Study Plan
 
 {% hint style="info" %}
 These questions were compiled from the [Tech Interview Handbook](https://www.techinterviewhandbook.org/algorithms/study-cheatsheet/) across its various topics. The order of studying and study plan is also inspired by the [Tech Interview Handbook](https://www.techinterviewhandbook.org/coding-interview-study-plan/#week-1---4-topical-study--practice).
@@ -282,3 +282,7 @@ One last piece of advice I have when attempting these problems is to first read 
 * [ ] Rectangle Area
 
 </details>
+
+## Week 5 onwards
+
+Once you have completed the study plan, feel free to use other question banks like Grind75 and Neetcode to continue improving your familiarity and speed. You will notice that many of the questions from this study plan overlaps with these question banks. It is recommended that you leave them last and only redo them when you've completed the other questions

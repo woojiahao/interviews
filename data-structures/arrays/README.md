@@ -32,10 +32,10 @@ description: >-
 1. Index out of bounds, check with: $$0 \leq |x| < len(arr)$$
 2. Handling duplicate entries
 3. Is the array sorted?
-   * If so, can you use [binary-search.md](../algorithms/binary-search.md "mention")instead?
+   * If so, can you use [binary-search.md](../../algorithms/binary-search.md "mention")instead?
    * If not, can you sort it while preserving information?
 4. Do not over-concatenate
-   * Use `append` and then copy the accumulation using `acc[::]` to reduce the amount of concatenation, refer to [recursion.md](../algorithms/recursion.md "mention")for more information on this technique
+   * Use `append` and then copy the accumulation using `acc[::]` to reduce the amount of concatenation, refer to [recursion.md](../../algorithms/recursion.md "mention")for more information on this technique
 5. Relationship between elements in an array such as the information that can be gathered based on the values/indices of the elements
 
 ## Techniques
@@ -44,7 +44,7 @@ description: >-
 
 This depends entirely on whether or not the information in the array can be preserved after sorting (take note of the effects of stable vs unstable sorting).
 
-If the array can be sorted first, [binary-search.md](../algorithms/binary-search.md "mention")could be applied afterwards
+If the array can be sorted first, [binary-search.md](../../algorithms/binary-search.md "mention")could be applied afterwards
 
 * Useful when finding the minimum difference between all elements and finding the lowest possible running total using prefix sums (commonly found in subsequence problems)
 
@@ -58,7 +58,7 @@ Pointers that point to different/same points in the array and move (often) indep
 * Pointers can cross one another
 * Commonly used for problems that involve palindromes
 
-When solving two pointer problems, focus on realizing the following conditions (similar to [binary-search.md](../algorithms/binary-search.md "mention")):
+When solving two pointer problems, focus on realizing the following conditions (similar to [binary-search.md](../../algorithms/binary-search.md "mention")):
 
 1. When to move the left pointer?
 2. When to move the right pointer?

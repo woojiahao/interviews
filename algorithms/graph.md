@@ -123,7 +123,7 @@ print(graph_topo_sort(4, [[0, 1], [0, 2], [2, 1], [3, 0]]))
 ## Dijkstra
 
 {% hint style="info" %}
-Only works with non-negative edge weights. If the edges have a negative weight, use [Bellman-Ford](graph.md#bellman-ford) instead
+Only works with non-negative edge weights. If the edges have a negative weight, use [#bellman-ford](graph.md#bellman-ford "mention") instead
 {% endhint %}
 
 ### Optimizations
@@ -220,7 +220,7 @@ class Solution:
 
 ## Prim’s algorithm
 
-Finds the Minimum Spanning Tree of a graph and is easier to implement than [Kruskal’s algorithm](graph.md#kruskals-algorithm)
+Finds the Minimum Spanning Tree of a graph and is easier to implement than [#kruskals-algorithm](graph.md#kruskals-algorithm "mention")
 
 {% hint style="info" %}
 The general intuition for Prim's algorithm is as such:\
@@ -309,7 +309,7 @@ def prim(n: int, edges: List[List[int]]):
 
 ## Kruskal’s algorithm
 
-Use [Union-Find Disjoint Set](../data-structures/union-find-disjoint-set-ufds.md) to determine which edges are redundant and use a min heap to store the weights of the edges. Redundant edges are those whose points already exist in the same set (meaning that there exists another path between these two points in the MST so far).
+Use [union-find-disjoint-set-ufds.md](../data-structures/union-find-disjoint-set-ufds.md "mention") to determine which edges are redundant and use a min heap to store the weights of the edges. Redundant edges are those whose points already exist in the same set (meaning that there exists another path between these two points in the MST so far).
 
 This implementation has a time complexity of $$O(E \log E + E \log V)$$ because we’re not sorting the entire graph at once. If we sorted, the time complexity would be similar but $$O(\log E) = O(\log V^2) = O(2 \log V) = O(\log V)$$ dominates the term so we take that instead
 
