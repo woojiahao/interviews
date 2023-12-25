@@ -10,6 +10,8 @@ description: >-
 
 This ties in to the next question but generally, I "tap out" when I have spent more than an hour to two hours on a problem and still have no idea about the intuition or question type to solve the problem. If I have some intuition but am struggling to implement it, I may "tap out" after about 30 minutes of attempting but to no avail.
 
+I also think there shouldn't be any fear of tapping out when you have spent a lot of time on the problem already. You should be maximizing your learning over banging your head against a wall. You can always return to these problems after you have practiced more and to see if your understanding holds.
+
 ## How long should I spend on each question?
 
 Generally, I try to spend:
@@ -41,3 +43,7 @@ A controversial opinion I hold is that LeetCode dailies are pointless if you're 
 I personally use **Python** for all my interviews and OAs, but you should use the language you are most comfortable with. Languages like Java and C++ have very extensive built-in library support for data structures like heaps and tree sets.
 
 The focus should really to be as comfortable as possible in your chosen language and focus on understanding the tricks that your language has to save time and improve your code quality.
+
+## Do I need LeetCode Premium?
+
+Not at all, most of the problems within the [study-plan.md](study-plan.md "mention") are free and those that require a premium account can be found on other websites like LintCode instead. The only perk LeetCode premium gives you is that it provides the companies that ask each question which can be useful if you're targeting specific companies but there are open-source lists of that information circulating online as well.

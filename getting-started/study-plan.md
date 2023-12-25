@@ -16,9 +16,9 @@ These questions are arranged by the order of topics that is recommended to be co
 However, that is my personal estimation, your mileage may vary as you may not have share the same experiences/strengths/weaknesses as me. So take your time to solve each problem and ensure that you fully understand them before proceeding.
 
 {% hint style="info" %}
-Questions marked with :star:are those that require LeetCode premium to access.\
+Questions marked with :star: are those that require LeetCode premium to access.\
 \
-Questions marked with :triangular\_flag\_on\_post:are problems that I found incredibly tricky and often tapped out, these are questions I would focus more time on when revising.
+Questions marked with :triangular\_flag\_on\_post: are problems that I found incredibly tricky and often tapped out, these are questions I would focus more time on when revising.
 {% endhint %}
 
 You may also notice that there are duplicate questions across topics. My recommended approach for these questions is to try the question again but using the associated topic to solve it, rather than glossing over them again.
@@ -235,6 +235,8 @@ One last piece of advice I have when attempting these problems is to first read 
 
 <summary>Dynamic Programming</summary>
 
+For more questions on Dynamic Programming, refer to the [#dynamic-programming-roadmap](study-plan.md#dynamic-programming-roadmap "mention") after you are done with this initial study plan
+
 * [ ] Climbing Stairs
 * [ ] Coin Change
 * [ ] House Robber
@@ -285,4 +287,133 @@ One last piece of advice I have when attempting these problems is to first read 
 
 ## Week 5 onwards
 
-Once you have completed the study plan, feel free to use other question banks like Grind75 and Neetcode to continue improving your familiarity and speed. You will notice that many of the questions from this study plan overlaps with these question banks. It is recommended that you leave them last and only redo them when you've completed the other questions
+Once you have completed the study plan, feel free to use other question banks like Grind75 and Neetcode to continue improving your familiarity and speed. You will notice that many of the questions from this study plan overlaps with these question banks. It is recommended that you leave them last and only redo them when you've completed the other questions.
+
+## Dynamic programming roadmap
+
+I have also collated a list of dynamic programming problems found from [this Reddit post](https://www.reddit.com/r/leetcode/comments/14o10jd/the\_ultimate\_dynamic\_programming\_roadmap/). If you feel like you are struggling with understanding dynamic programming, feel free to try out this list as well.
+
+I would recommend reading [dynamic-programming.md](../algorithms/dynamic-programming.md "mention") while attempting this list. I would also recommend trying to implement the solution both recursively and iteratively.&#x20;
+
+<details>
+
+<summary>Warmup</summary>
+
+* [ ] Climbing Stairs
+* [ ] Nth Tribonacci Number
+* [ ] Perfect Squares
+
+</details>
+
+<details>
+
+<summary>Linear Sequences</summary>
+
+These are problems that require solving sub-problems based on the prefix of the array with a constant transition
+
+* [ ] Minimum Cost to Climb Stairs
+* [ ] Minimum Time to Make Rope Colorful :triangular\_flag\_on\_post:
+* [ ] House Robber
+* [ ] Decode Ways
+* [ ] Minimum Cost for Tickets :triangular\_flag\_on\_post:
+* [ ] Solving Questions with Brainpower
+
+</details>
+
+<details>
+
+<summary>Grids</summary>
+
+These are problems where the dynamic programming array is the same dimensions as the grid
+
+* [ ] Unique Paths
+* [ ] Unique Paths 2 :triangular\_flag\_on\_post:
+* [ ] Minimum Path Sum
+* [ ] Count Square Submatrices with All Ones :triangular\_flag\_on\_post:
+* [ ] Maximal Square
+* [ ] Dungeon Game :triangular\_flag\_on\_post:
+
+</details>
+
+<details>
+
+<summary>Two Sequences</summary>
+
+These problems often require $$O(MN)$$, where $$dp[i][j]$$ solves for $$arr1[:i]$$ and $$arr2[:j]$$
+
+* [ ] Longest Common Subsequence
+* [ ] Uncrossed Lines
+* [ ] Minimum ASCII Delete Sum for Two Strings
+* [ ] Edit Distance
+* [ ] Distinct Subsequences
+* [ ] Shortest Common Supersequence
+
+</details>
+
+<details>
+
+<summary>Intervals</summary>
+
+These problems often require solving for every interval of the array
+
+* [ ] Longest Palindromic Subsequnce
+* [ ] Strong Game 7
+* [ ] Palindromic Substrings
+* [ ] Minimum Cost Tree from Leaf Values
+* [ ] Strange Pointer
+* [ ] Burst Balloons
+
+</details>
+
+<details>
+
+<summary>Linear Sequence Transitions</summary>
+
+These problems are often solved on every prefix of the array, transition from every $$j < i$$
+
+* [ ] Count Number of Teams
+* [ ] Longest Increasing Subsequence
+* [ ] Partition Array for Maximum Sum
+* [ ] Largest Sum of Averages
+* [ ] Filling Bookcase Shelves
+
+</details>
+
+<details>
+
+<summary>Knapsack-like</summary>
+
+* [ ] Partition Equal Subset Sum
+* [ ] Number of Dice Rolls with Target Sum
+* [ ] Combination Sum 4
+* [ ] Ones and Zeros
+* [ ] Coin Change
+* [ ] Coin Change 2
+* [ ] Target Sum
+* [ ] Last Stone Weight 2
+* [ ] Profitable Schemes
+
+</details>
+
+<details>
+
+<summary>Topological Sort/Graphs</summary>
+
+These problems often require solving on all sub-graphs connected to each node
+
+* [ ] Longest String Chain
+* [ ] Longest Increasing Path in a Matrix
+* [ ] Course Schedule 3
+
+</details>
+
+<details>
+
+<summary>Trees</summary>
+
+These problems often require solving on all subtrees
+
+* [ ] House Robbers 3 :triangular\_flag\_on\_post:
+* [ ] Binary Tree Cameras
+
+</details>
