@@ -49,7 +49,7 @@
   * [Accessing APIs](other-technical-topics/system-design/accessing-apis.md)
 * [Operating Systems](other-technical-topics/operating-systems.md)
 
-## 🍿 Behavioural
+## 🍿 Non-technical Topics
 
-* [Preparation](behavioural/preparation.md)
-* [Common Questions](behavioural/common-questions.md)
+* [Behavioral Interviews](non-technical-topics/behavioral-interviews.md)
+* [Resumes](non-technical-topics/resumes.md)

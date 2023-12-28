@@ -13,7 +13,7 @@ These questions were compiled from the [Tech Interview Handbook](https://www.tec
 
 These questions are arranged by the order of topics that is recommended to be completed. For me, I spent about **a month** completing the entire list of questions. There are four groups of questions so you can aim to complete each group in a week.
 
-However, that is my personal estimation, your mileage may vary as you may not have share the same experiences/strengths/weaknesses as me. So take your time to solve each problem and ensure that you fully understand them before proceeding.
+However, that is my personal estimation, your mileage may vary as you may not share the same experiences/strengths/weaknesses as me. So take your time to solve each problem and ensure that you fully understand them before proceeding.
 
 {% hint style="info" %}
 Questions marked with :star: are those that require LeetCode premium to access.\
