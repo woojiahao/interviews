@@ -51,6 +51,7 @@
     * [Min Cost to Climb Stairs](problems-guide/dynamic-programming-roadmap/linear-sequence/min-cost-to-climb-stairs.md)
     * [Minimum Time to Make Rope Colorful](problems-guide/dynamic-programming-roadmap/linear-sequence/minimum-time-to-make-rope-colorful.md)
     * [House Robber](problems-guide/dynamic-programming-roadmap/linear-sequence/house-robber.md)
+    * [Decode Ways](problems-guide/dynamic-programming-roadmap/linear-sequence/decode-ways.md)
 
 ## 🍣 Other Technical Topics
 
