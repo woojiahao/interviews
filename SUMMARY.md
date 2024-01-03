@@ -47,6 +47,10 @@
     * [Climbing Stairs](problems-guide/dynamic-programming-roadmap/warmup/climbing-stairs.md)
     * [Nth Tribonacci Number](problems-guide/dynamic-programming-roadmap/warmup/nth-tribonacci-number.md)
     * [Perfect Squares](problems-guide/dynamic-programming-roadmap/warmup/perfect-squares.md)
+  * [Linear Sequence](problems-guide/dynamic-programming-roadmap/linear-sequence/README.md)
+    * [Min Cost to Climb Stairs](problems-guide/dynamic-programming-roadmap/linear-sequence/min-cost-to-climb-stairs.md)
+    * [Minimum Time to Make Rope Colorful](problems-guide/dynamic-programming-roadmap/linear-sequence/minimum-time-to-make-rope-colorful.md)
+    * [House Robber](problems-guide/dynamic-programming-roadmap/linear-sequence/house-robber.md)
 
 ## 🍣 Other Technical Topics
 

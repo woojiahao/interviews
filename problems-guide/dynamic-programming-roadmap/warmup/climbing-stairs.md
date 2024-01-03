@@ -79,7 +79,7 @@ def climb_stairs(n):
 
 Notice that for every `i` we are at, we only ever reference the previous two states, i.e. `i - 1` and `i - 2`. As such, we don't need to use an array to store all of the past states. Instead, we can just use two variables to represent `i - 1` and `i - 2` respectively.
 
-{% hint style="info" %}
+{% hint style="success" %}
 This is a very common optimization technique for DP problems where if you only rely on the previous `n` rows/columns and `n` is finite, then we can simply store using `n`, rather than storing all previous states that might not be used at all.
 {% endhint %}
 
