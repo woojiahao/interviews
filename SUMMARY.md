@@ -40,6 +40,14 @@
   * [Double Ended Queues](data-structures/queues/double-ended-queues.md)
 * [Union-Find Disjoint Set (UFDS)](data-structures/union-find-disjoint-set-ufds.md)
 
+## 🍡 Problems Guide
+
+* [Dynamic Programming Roadmap](problems-guide/dynamic-programming-roadmap/README.md)
+  * [Warmup](problems-guide/dynamic-programming-roadmap/warmup/README.md)
+    * [Climbing Stairs](problems-guide/dynamic-programming-roadmap/warmup/climbing-stairs.md)
+    * [Nth Tribonacci Number](problems-guide/dynamic-programming-roadmap/warmup/nth-tribonacci-number.md)
+    * [Perfect Squares](problems-guide/dynamic-programming-roadmap/warmup/perfect-squares.md)
+
 ## 🍣 Other Technical Topics
 
 * [General Problem Solving](other-technical-topics/general-problem-solving.md)

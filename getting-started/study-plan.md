@@ -295,6 +295,10 @@ I have also collated a list of dynamic programming problems found from [this Red
 
 I would recommend reading [dynamic-programming.md](../algorithms/dynamic-programming.md "mention") while attempting this list. I would also recommend trying to implement the solution both recursively and iteratively.&#x20;
 
+{% hint style="info" %}
+I have included a series of posts for the questions in this roadmap under this study plan. You can find the posts here:&#x20;
+{% endhint %}
+
 <details>
 
 <summary>Warmup</summary>
@@ -357,7 +361,7 @@ These problems often require $$O(MN)$$, where $$dp[i][j]$$ solves for $$arr1[:i]
 These problems often require solving for every interval of the array
 
 * [ ] Longest Palindromic Subsequnce
-* [ ] Strong Game 7
+* [ ] Strong Game 7 :triangular\_flag\_on\_post:
 * [ ] Palindromic Substrings
 * [ ] Minimum Cost Tree from Leaf Values
 * [ ] Strange Pointer
@@ -415,5 +419,16 @@ These problems often require solving on all subtrees
 
 * [ ] House Robbers 3 :triangular\_flag\_on\_post:
 * [ ] Binary Tree Cameras
+
+</details>
+
+<details>
+
+<summary>Interesting Problems</summary>
+
+Other interesting problems that I have done so far
+
+* [ ] String Compression 2 :triangular\_flag\_on\_post:
+* [ ] Minimum Difficulty of a Job Schedule :triangular\_flag\_on\_post:
 
 </details>
