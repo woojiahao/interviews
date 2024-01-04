@@ -1,6 +1,6 @@
 # Climbing Stairs
 
-## State transitions
+## Transitions
 
 Observe that for every stair, you can make two decisions:
 
@@ -9,19 +9,15 @@ Observe that for every stair, you can make two decisions:
 
 ## Recurrence tree
 
-To model this as a tree, we can see the following:
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Notice that if we exceed the `n`, we will not count that as a way to form `n`.&#x20;
-
-Also notice that we are essentially repeating the computation of `2` twice, telling us that we can save some time by memoizing the result of `2` when it's first computed in the left sub-tree so the computation on the right sub-tree is reduced to an $$O(1)$$ lookup.
+We don't count leaves that end with values where `v > n`. We can also memoize the results of sub-trees such as `2`, reducing the computation of the right sub-tree to a $$O(1)$$ lookup.
 
 ## Top-down
 
-To solve this as a DP problem, we first model the decisions (or state transitions) and then implement memoization or tabulation.
-
-The memoization code looks like this:
+{% hint style="info" %}
+Top-down can often be implemented by directly modelling the state transitions
+{% endhint %}
 
 ```python
 def climb_stairs(n):
@@ -34,7 +30,7 @@ def climb_stairs(n):
         return memo[m]
 ```
 
-The recurrence relationship above looks like this:
+The recurrence relation above looks like this:
 
 $$
 dp(m) = \begin{cases}
@@ -46,23 +42,36 @@ $$
 
 ## Bottom-up
 
-To implement it iteratively, we can focus on trying to think of building from base cases (i.e. thinking in reverse) where we start with asking
+{% hint style="success" %}
+**Trick:** Re-framing the problem\
+\
+A way to convert top-down to bottom-up solutions is to **re-frame the problem** in a way that only **restricts your view of the data to a subset**, such as the prefix/suffix/sub-array. Solving this subset gives you the tools to solve larger subsets.\
+\
+A good way to do this is to ask: "Given index i, how do I use the solutions of 0 to i-1 (prefix) or i+1 to n (suffix) solve for index i?"
+{% endhint %}
 
-> How many ways can we form `m` given we know how many ways we have to solve everything till `m - 1` so far?
-
-This way, we can instead model our recurrence relationship as such:
+By re-framing the problem, we will notice that if we are index $$m$$ and we have computed the optimal solution for $$0..m-1$$ (prefix), then we can obtain the optimal solution for $$m$$ using the following recurrence:
 
 $$
 dp(m) = \begin{cases}
-1, m == 1\\
-2, m == 2\\
+1, m = 1\\
+2, m = 2\\
 dp(m-1) + dp(m - 2)
 \end{cases}
 $$
 
-The reason why we can do so is because we can observe that given `m`, the ways to reach `m` is simply the ways it took to reach `m - 1` and the ways it took to reach `m - 2` combined.
-
-Answering this, we can re-model the solution iteratively:
+{% hint style="success" %}
+**Trick:** Interpreting recurrence relations\
+\
+Define what $$dp(i)$$ means and read the recurrence in terms of that definition.\
+\
+For instance, the above can be interpreted as:\
+\
+$$dp(m)$$ is the number of ways to reach step $$m$$\
+If $$m = 1$$, then it means we can only take 1 step to reach it (i.e. 1 way)\
+If $$m = 2$$, then we can either take 2x1 step or 1x2 steps to reach it (i.e. 2 ways)\
+Otherwise, the number of ways to reach step $$m$$ is by stepping once from $$m-1$$ or stepping twice from $$m-2$$
+{% endhint %}
 
 ```python
 def climb_stairs(n):
@@ -77,21 +86,23 @@ def climb_stairs(n):
 
 ## Optimization
 
-Notice that for every `i` we are at, we only ever reference the previous two states, i.e. `i - 1` and `i - 2`. As such, we don't need to use an array to store all of the past states. Instead, we can just use two variables to represent `i - 1` and `i - 2` respectively.
+From the recurrence relation, we only ever require the previous 2 states, `dp(m - 1)` and `dp(m - 2)` to compute `dp(m)`. So, we can store these 2 states as variables instead of using an array.
 
 {% hint style="success" %}
-This is a very common optimization technique for DP problems where if you only rely on the previous `n` rows/columns and `n` is finite, then we can simply store using `n`, rather than storing all previous states that might not be used at all.
+**Optimization:** $$n$$-state caching\
+\
+If your recurrence relies on a finite number of $$n$$ states only, we can use $$n$$ variables to represent these states, removing the need for an array
 {% endhint %}
 
 ```python
 def climb_stairs(n):
     if n == 1: return 1 # corner case
-    s1, s2 = 1, 2
+    s1, s2 = 1, 2 # s1 -> dp(m-2), s2 -> dp(m-1) 
     for i in range(3, n + 1):
         s1, s2 = s2, s1 + s2
     return s2
 ```
 
-## Conclusion
-
-After more time spent inspecting this relationship, what you will observe is that this is effectively the Fibonacci Sequence. This is a common DP pattern where $$dp(i)$$is dependent only on the most recent $$n$$ states, so storing just $$n$$ variables is sufficient.
+{% hint style="info" %}
+Keen observers will notice that this is basically the Fibonacci sequence
+{% endhint %}

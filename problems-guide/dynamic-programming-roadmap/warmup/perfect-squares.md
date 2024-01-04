@@ -1,22 +1,16 @@
 # Perfect Squares
 
-A slight departure from [climbing-stairs.md](climbing-stairs.md "mention") and [nth-tribonacci-number.md](nth-tribonacci-number.md "mention") but this problem is still pretty doable with the following observations.
-
 {% hint style="info" %}
-There is a purely [mathematical solution](https://leetcode.com/problems/perfect-squares/solutions/71488/summary-of-4-different-solutions-bfs-dp-static-dp-and-mathematics/) for this as well but I won't cover it as the focus of this guide is to examine how we derive DP relationships.
+There is a purely [mathematical solution](https://leetcode.com/problems/perfect-squares/solutions/71488/summary-of-4-different-solutions-bfs-dp-static-dp-and-mathematics/) for this as well but I won't cover it here
 {% endhint %}
 
 ## Observations
 
-First of all, an obvious but key observation is that the number of perfect square numbers that sum to a perfect square is `1`.
-
-Next, observe that for `n` when `n` is not a perfect square number, we will need to try all possible combinations of perfect square numbers to form `n`. If we have tried perfect square number `p`, we will have to try to find the least number of perfect square numbers to form `n - p` instead.
-
-This means, if we process `n - p` in an earlier iteration, we can reuse this value, rather than performing the computation again. This is exactly what DP is useful for.
+* The number of perfect square numbers (PSN) that sum to a perfect square is `1`
+* The minimum number of PSNs to form `n` is found by trying all possible combinations of perfect square numbers
+* Using PSN `p` means we have to find the minimum number of PSNs to form `n - p` after
 
 ## Recurrence relation
-
-Given the [#observations](perfect-squares.md#observations "mention"), we can form the recurrence relation:
 
 $$
 dp(n) = \begin{cases}
@@ -27,15 +21,14 @@ $$
 
 We add $$1$$ to $$dp(n-p)$$ because we are using $$p$$ as the first perfect square.
 
-{% hint style="info" %}
-This is a very common type of recurrence where the optimal answer relies on various past states that have already been computed. The answer can be derived from fixing a chosen value and then relying on previous states. More of this pattern will be seen in the coming problems.\
-\
-As a result, we cannot optimize it the way we did with [climbing-stairs.md](climbing-stairs.md "mention") where we store only the past $$n$$ states because $$n$$ can be infinitely large (in theory)
+{% hint style="success" %}
+**Recurrence pattern:** past ~~lives~~ states\
+
+
+Some states rely on multiple previously computed state. This contrasts the $$n$$ state caching optimization as $$n$$ is not fixed.&#x20;
 {% endhint %}
 
 ## Bottom-up
-
-We can start with the iterative bottom-up approach because it is more intuitive that way:
 
 ```python
 def perfect_squares(n):
@@ -54,8 +47,9 @@ def perfect_squares(n):
 ```
 
 {% hint style="success" %}
-A common trick we have here is to set the value of the $$dp$$ to an impossibly high/low number, depending on the operation performed.\
+**Trick:** using impossibly high/low numbers to initialize $$dp(i)$$\
 \
-If `min(dp[i], ...)` is used, then use an impossibly high number.\
+If `min(dp[i], ...)` is used, then use an impossibly high number to initialize `dp[i]`\
+\
 Otherwise, if `max(dp[i], ...)` is used, then use an impossibly low number or `0` if no other states can be `0`.
 {% endhint %}

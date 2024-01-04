@@ -2,16 +2,14 @@
 
 ## Transitions
 
-The problem actually outlines the transitions rather clearly:
-
 1. If `s[i] = '0'` , then invalid ways (0)
 2. If `s[i] = '1'`, then we can choose to take `s[i]` as it is, or pair it with the next digit (no matter what, it will form a valid number)
 3. If `s[i] = '2'`, then we can choose to take `s[i]` as it is, or pair it with the next digit as long as the next digit is from `'0'` to `'6'`
 4. Any other digits have to be taken as it is
 
-This gives rise to the naive recurrence relation and recursive solution.
-
 ## Top-down
+
+Modelling the transitions as-is gives us:
 
 $$
 dp(i) = \begin{cases}
@@ -36,21 +34,23 @@ def decode_ways(s):
 
 We can then memoize the value of each recursive call by index `i`.
 
-We can then turn our attention to converting this to an iterative solution.
-
 ## Bottom-up
 
-We will employ the same way we have been converting top-down solutions to bottom-up, by re-framing the question we are asking ourselves. However, this time, there is a crucial observation to be made:&#x20;
-
-We CANNOT figure out the ways to form $$s[:i+1]$$ (much like what we have been trying to do with the prefixes of the previous problems). This is because the nature of decoding involves looking forward to see the next character. Thus, we ask ourselves:
+To solve this problem using bottom-up, let's re-frame the problem. However, notice that we cannot use the prefix of the array. This is because if we were to use the prefix `s[:i+1]`, we would need to look-ahead to `s[i+1]`, which should not be available yet. So we can re-framing the problem using suffixes instead:
 
 > Given $$[i, n)$$, can we find out how many ways there are to form $$s[i-1]$$?
 
-Notice that we are now looking at the SUFFIX of the string, not the prefix. So we can think of $$dp(i)$$ as the number of ways it takes to form $$s[i:]$$. This is useful to know as we move backwards as it lets us model the ways we can form $$dp(i-1)$$.
+{% hint style="success" %}
+**Trick:** when to use suffixes\
+\
+When re-framing the problem, it may not be intuitive if the prefix or suffix should be used. A good way to see if a suffix is needed is **if each state relies on looking ahead**. This makes prefixes untenable as the prefixes should not permit the look ahead.
+{% endhint %}
 
-For instance, if $$s = `12325276$$ and we are currently looking at $$123\text{ } 2 \text{ } 5276$$, we would have computed the number of ways to form $$5276$$. Given that the current character is $$2$$, we can either take it as it is (i.e. number of ways to form $$5276$$) or take it with the next character $$5$$. If we do the latter, we would instead be looking at the number of ways to form $$276$$. This is why it is so useful that we have processed the suffix. The same cases as [#top-down](decode-ways.md#top-down "mention") but this time, we are looking at the string in reverse.
+<figure><img src="../../../.gitbook/assets/image.png" alt="" width="274"><figcaption></figcaption></figure>
 
-This gives us the recurrence:
+Looking at the example above, if we have index `i`, then we can use the values computed from `i+1` onwards to figure out how many ways there are to form `s[i:].`
+
+This gives us the recurrence relation:
 
 $$
 dp(i) = \begin{cases}
@@ -61,7 +61,9 @@ dp(i+1) + dp(i+2), s[i] = 1 \lor (s[i] = 2 \land s[i+1] < 6)
 \end{cases}
 $$
 
-Notice that it looks very similar to the original recurrence as we are essentially doing the same operations. Additionally, we can apply the $$n$$ state optimization, where $$n = 2$$ given that we are only ever using the next 2 states.
+Notice that it looks very similar to the original recurrence as we are essentially doing the same operations.&#x20;
+
+We can also apply the $$n$$ state caching optimization, where $$n = 2$$.
 
 ```python
 def decode_ways(s):
@@ -76,6 +78,4 @@ def decode_ways(s):
     return s1
 ```
 
-{% hint style="success" %}
-This gives rise to another common trick in solving DP, trying to solve the problem backwards (i.e. using suffix over prefix). This is especially useful when each $$dp(i)$$ is dependent on the next character (which makes using the prefix impossible)
-{% endhint %}
+Note that the default values of `s1` and `s2` are both derived from the two base cases we have, with `s1 = 1` because `i = |s|` and `s2 = 0` because `i > |s|` (out of bounds so no ways to form it).

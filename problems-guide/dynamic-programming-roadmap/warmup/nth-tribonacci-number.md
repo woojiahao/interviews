@@ -1,16 +1,8 @@
 # Nth Tribonacci Number
 
-This problem is actually very similar [climbing-stairs.md](climbing-stairs.md "mention") (Fibonacci Sequence) and is a simple extension.
-
-However, the question actually removes any guesswork on what pattern we are relying on and so we can focus on the implementation instead.
-
-{% hint style="info" %}
-I won't cover all three implementations, if you want to see how to simplify this type of DP relationship, refer to [climbing-stairs.md](climbing-stairs.md "mention")
-{% endhint %}
+This problem is basically [climbing-stairs.md](climbing-stairs.md "mention") but using three states instead.
 
 ## Bottom-up
-
-The bottom up DP has the following recurrence relation:
 
 $$
 dp(m) = \begin{cases}
@@ -21,7 +13,7 @@ dp(m-2) + dp(m - 1) + dp(m)
 \end{cases}
 $$
 
-As discussed in [climbing-stairs.md](climbing-stairs.md "mention"), since we only rely on the past `3` states, we can use variables to represent them instead, rather than using an array to store all past states.
+As discussed in [climbing-stairs.md](climbing-stairs.md "mention"), since we only rely on the past `3` states, we can use $$n$$ state caching and store them as variables instead.
 
 ```python
 def tribonacci(n):
