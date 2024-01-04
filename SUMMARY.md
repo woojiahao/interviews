@@ -52,6 +52,7 @@
     * [Minimum Time to Make Rope Colorful](problems-guide/dynamic-programming-roadmap/linear-sequence/minimum-time-to-make-rope-colorful.md)
     * [House Robber](problems-guide/dynamic-programming-roadmap/linear-sequence/house-robber.md)
     * [Decode Ways](problems-guide/dynamic-programming-roadmap/linear-sequence/decode-ways.md)
+    * [Minimum Cost for Tickets](problems-guide/dynamic-programming-roadmap/linear-sequence/minimum-cost-for-tickets.md)
 
 ## 🍣 Other Technical Topics
 

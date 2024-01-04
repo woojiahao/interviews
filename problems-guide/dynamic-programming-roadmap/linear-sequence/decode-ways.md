@@ -41,9 +41,9 @@ To solve this problem using bottom-up, let's re-frame the problem. However, noti
 > Given $$[i, n)$$, can we find out how many ways there are to form $$s[i-1]$$?
 
 {% hint style="success" %}
-**Trick:** when to use suffixes\
+**Trick:** Implementing recurrence relations\
 \
-When re-framing the problem, it may not be intuitive if the prefix or suffix should be used. A good way to see if a suffix is needed is **if each state relies on looking ahead**. This makes prefixes untenable as the prefixes should not permit the look ahead.
+If the recurrence relation looks like $$dp(i) = dp(i - 1)$$, then it must be processed from left to right using prefixes. If it looks like $$dp(i) = dp(i + 1)$$, then it must be processed from right to left using suffixes.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image.png" alt="" width="274"><figcaption></figcaption></figure>
