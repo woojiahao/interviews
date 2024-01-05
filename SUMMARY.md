@@ -53,6 +53,7 @@
     * [House Robber](problems-guide/dynamic-programming-roadmap/linear-sequence/house-robber.md)
     * [Decode Ways](problems-guide/dynamic-programming-roadmap/linear-sequence/decode-ways.md)
     * [Minimum Cost for Tickets](problems-guide/dynamic-programming-roadmap/linear-sequence/minimum-cost-for-tickets.md)
+    * [Solving Questions with Brainpower](problems-guide/dynamic-programming-roadmap/linear-sequence/solving-questions-with-brainpower.md)
 
 ## 🍣 Other Technical Topics
 
