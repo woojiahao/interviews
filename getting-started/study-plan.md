@@ -3,6 +3,17 @@ description: >-
   These are the questions I used for revising each topic, try to solve each
   topic completely and understand the core components before moving on to the
   next topic
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Study Plan
@@ -11,19 +22,26 @@ description: >-
 These questions were compiled from the [Tech Interview Handbook](https://www.techinterviewhandbook.org/algorithms/study-cheatsheet/) across its various topics. The order of studying and study plan is also inspired by the [Tech Interview Handbook](https://www.techinterviewhandbook.org/coding-interview-study-plan/#week-1---4-topical-study--practice).
 {% endhint %}
 
-These questions are arranged by the order of topics that is recommended to be completed. For me, I spent about **a month** completing the entire list of questions. There are four groups of questions so you can aim to complete each group in a week.
+## Preface
 
-However, that is my personal estimation, your mileage may vary as you may not share the same experiences/strengths/weaknesses as me. So take your time to solve each problem and ensure that you fully understand them before proceeding.
+It took me about **a month** to complete the study plan (not including the dynamic programming roadmap). It's important to preface that I had completed a data structures & algorithms (DSA) course right before starting my revision so a lot of the fundamentals was fresh in my head. You may find yourself spending more/less time than I did and that is alright.
 
-{% hint style="info" %}
-Questions marked with :star: are those that require LeetCode premium to access.\
-\
-Questions marked with :triangular\_flag\_on\_post: are problems that I found incredibly tricky and often tapped out, these are questions I would focus more time on when revising.
-{% endhint %}
+If you are not familiar with fundamental DSA, it is recommended that you read a book on DSA before diving into LeetCode as it will help you better understand how to apply the data structures/algorithms to the problems. You can find my recommendations in the [faqs.md](faqs.md "mention").
 
-You may also notice that there are duplicate questions across topics. My recommended approach for these questions is to try the question again but using the associated topic to solve it, rather than glossing over them again.
+## How to use?
 
-One last piece of advice I have when attempting these problems is to first read the associated sections I have included in this guide and then trying the techniques out. While you can try "discovering" the patterns yourself, having a guided format will help you structure your thinking going into each problem.
+Feel free to refer to the associated sections about each topic (in the left sidebar) to learn the techniques and patterns commonly associated to questions in that topic.
+
+While it is good if you are "discover" these patterns yourself, having them formally introduced can help you to structure your thinking going into each problem.
+
+### Notation
+
+* Questions marked with :star: require LeetCode premium
+* Questions marked with :triangular\_flag\_on\_post: are problems that I found incredibly tricky and often tapped out
+
+### Duplicate questions
+
+My recommended approach for duplicate questions is to try the question again but using the associated topic to solve it, rather than glossing over them again.
 
 ## Week 1
 
@@ -287,17 +305,19 @@ For more questions on Dynamic Programming, refer to the [#dynamic-programming-ro
 
 ## Week 5 onwards
 
-Once you have completed the study plan, feel free to use other question banks like Grind75 and Neetcode to continue improving your familiarity and speed. You will notice that many of the questions from this study plan overlaps with these question banks. It is recommended that you leave them last and only redo them when you've completed the other questions.
+Once you have completed the study plan, feel free to use other question banks like Grind75 and Neetcode to continue improving your familiarity and speed.&#x20;
+
+You will notice that many of the questions from this study plan overlaps with these question banks. I recommend leaving them to the end and redoing them when you've completed the other questions.
+
+You may also want to try improving your dynamic programming skills with the dynamic programming roadmap below.
 
 ## Dynamic programming roadmap
 
-I have also collated a list of dynamic programming problems found from [this Reddit post](https://www.reddit.com/r/leetcode/comments/14o10jd/the\_ultimate\_dynamic\_programming\_roadmap/). If you feel like you are struggling with understanding dynamic programming, feel free to try out this list as well.
-
-I would recommend reading [dynamic-programming.md](../algorithms/dynamic-programming.md "mention") while attempting this list. I would also recommend trying to implement the solution both recursively and iteratively.&#x20;
-
 {% hint style="info" %}
-I have included a series of posts for the questions in this roadmap under this study plan. You can find the posts here:&#x20;
+These questions were collated from [this Reddit post](https://www.reddit.com/r/leetcode/comments/14o10jd/the\_ultimate\_dynamic\_programming\_roadmap/)
 {% endhint %}
+
+I have written up a problems guide for this roadmap as I personally think that developing the intuition for dynamic programming is not easy and I would like to help bridge the gap. The problems guide can be found [here.](../problems-guide/dynamic-programming-roadmap/)
 
 <details>
 

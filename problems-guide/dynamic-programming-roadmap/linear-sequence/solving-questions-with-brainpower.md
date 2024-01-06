@@ -50,3 +50,19 @@ def brainpower(questions):
         dp[i] = max(dp[i + 1], dp[min(i + questions[i][1] + 1, N)] + questions[i][0]) 
     return dp[0]
 ```
+
+## Further discussion
+
+Actually, there is a way to implement the bottom-up solution using the "re-framing the problem" trick.
+
+> Given that we want to solve question `i`, what's the maximum points achievable?
+
+By thinking of the problem this way, we can devise an approach to figure out how to forcibly "solve" question `i`. We can iterate through `0..i-1` to find all days where we would have solved it and the cooldown does not exceed `i`. This results in the following recurrence instead:
+
+$$
+dp(i) = \max(q[i][0], \forall j \in [0, i), j + q[j][1] < i \land dp(j) + q[i][0])
+$$
+
+The reason we do not take $$dp(i - 1)$$ is because if $$dp(i - 1)$$ is chosen, we might not be able to solve question `i`. The only problem with this solution is that it takes $$O(n^2)$$ time to compute which does not fit within the constraints of the problem.
+
+However, I would like to bring this up as an alternative thought process to highlight how sometimes "re-framing" the problem might not always be the optimal solution.

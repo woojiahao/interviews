@@ -23,38 +23,36 @@ layout:
 
 # 🍕 Welcome!
 
-Internship hunting + interviewing takes a lot of practice and a whole lot of luck. I was ghosted/rejected by 99% of the over 200++ companies I had applied to. While it is easy to feel discouraged when you see these numbers, I think it's even more important to notice that while luck is a factor, you should be minimizing your potential for failure by working on the things you can control such as your ability to solve problems under pressure.
+> Internship hunting and interview preparation takes a lot of practice and a whole lot of luck. While it is easy to feel discouraged when you receive rejection after rejection, it is keep your head high regardless and to continue pushing onward.&#x20;
 
-Interviewing is a skill that takes practice and time. It helps to be able to spot the recurring patterns and how to best tackle them. This guide aims to provide a comprehensive look at the various topics and patterns of interview and prepare you for other aspects of interviewing like system design and behavioral.
+## Who am I?
 
-## About me
+My name is Jia Hao. I am a computer science undergraduate from the National University of Singapore.&#x20;
 
-My name is Jia Hao. I am a computer science undergraduate from the National University of Singapore. Before May 2023, I had not touched LeetCode much before, even though I had years of experience developing software. I could barely handle easy problems and that was an issue.
+Before May 2023, I was a technical interviewing newbie. Although I had years of experience developing software, I was barely able to solve easy problems. This is because interviewing requires a completely different set of skills. While I was very fortunate to have still landed an internship for summer 2023, I realized that my interviewing skills were lacking and that spurred me to start taking interview preparation seriously.
 
-During summer 2023, I started seriously practicing LeetCode and various interview components like system design and behavioral. This intensive preparation helped me to receive offers from two large companies.
+I devised methods of studying, combining hundreds of resources to develop a strong foundation in many aspects of technical interviews. Thankfully, my effort paid off and I was able to land **two** internship offers from large companies (one HFT and one big tech) for summer 2024.
 
-Nowadays, I solve LeetCode to keep my mind sharp and to have fun! I started this guide to help formalize my own learning and also help make this knowledge more accessible to others. All of these notes have been compiled from months of self-study and working on LeetCode. I hope that it can help someone with their interviewing journey.
+I am creating this guide to consolidate my learning and to share this learning with others. I hope that this guide can help accompany you on your own technical interviewing journey and that you are able to land the internship/job of your dreams.
 
 ## Using this guide
 
 {% hint style="info" %}
-I will not be covering fundamental concepts like how arrays work as those are assumed knowledge. Instead, I will focus on the techniques you can apply when approach such problems
+I will not be covering fundamental concepts like how arrays work as those are assumed knowledge
 {% endhint %}
 
-This guide aims to give you the starting fundamentals of solving the commonly seen coding interview questions along with some of my insights for the other components of interviewing.
+I recommend tackling each topic one at a time and focusing on understanding the concepts behind each question you solve. You can find the list of questions and study plan under [study-plan.md](getting-started/study-plan.md "mention").&#x20;
 
-I recommend tackling each topic one at a time and focusing on understanding the concepts behind each question you solve, rather than trying to shoot for solving a high number of problems with low understanding. You can find the list of questions and study plan under [study-plan.md](getting-started/study-plan.md "mention"). Once you have felt like you have mastered the fundamentals, feel free to move on to trying a diverse set of problems from lists like [Neetcode](https://neetcode.io/roadmap) and [Grind75](https://www.techinterviewhandbook.org/grind75).
+Once you have felt like you have mastered the fundamentals, feel free to move on to working on problem lists like [Neetcode](https://neetcode.io/roadmap) and [Grind75](https://www.techinterviewhandbook.org/grind75).
 
-Additionally, I recommend starting your preparations really early. I have included my timeline for securing my internships for summer 2024 found here: [summer-2024-timeline.md](getting-started/summer-2024-timeline.md "mention")
+This guide is not all powerful and you will not become a technical interview expert in two weeks. It is important that you start your preparations early. I have included my timeline for securing my internships for summer 2024: [summer-2024-timeline.md](getting-started/summer-2024-timeline.md "mention").
 
 ## Contact me
 
-If you wish to contribute to this guide or have found errors in my notes, please drop me an email at [woojiahao1234@gmail.com ](mailto:woojiahao1234@gmail.com)
+If you wish to contribute to this guide, have found errors in my notes, or have questions about this guide or for me, please drop me an email at [woojiahao1234@gmail.com](mailto:woojiahao1234@gmail.com).
 
-If you have used this guide to land yourself an internship or just enjoy reading it, feel free to drop me an email as well, I would love to learn how others are using this guide!
+If you have used this guide to land yourself an internship or just enjoyed reading it, feel free to drop me an email as well, I would love to learn how others are using this guide!
 
 ## Acknowledgements
 
-Much of the basis of this guide comes from the [Tech Interview Handbook](https://www.techinterviewhandbook.org/) written by [Yangshun](https://www.linkedin.com/in/yangshun/?originalSubdomain=sg), I used it as my starting point and expanded on it as I worked on over 200 problems over the summer.&#x20;
-
-I highly recommend giving it a read as it covers many other aspects of interviewing that I did not cover such as salary negotiation. The main focus of this guide is to really consolidate the knowledge and tips\&tricks I gathered throughout my time preparing for the technical aspects of technical interviews.
+The basis of this guide is inspired by the [Tech Interview Handbook](https://www.techinterviewhandbook.org/) written by [Yangshun](https://www.linkedin.com/in/yangshun/?originalSubdomain=sg). I started my journey using that guide and have combined it with many other resources to create this guide. I highly recommend giving it a read as it covers many aspects of interviewing that I did not cover.
