@@ -10,10 +10,21 @@ description: >-
 ## Recognizing DP problems
 
 1. Minimizing/maximizing:&#x20;
+2. Number of ways:
+3.
 
 ## Steps to solving DP
 
+1. Identify states
+2. Identify state transitions
+3. Implement top-down
+4. Convert to bottom-up
+
 ## Types of DP
+
+1. Linear sequence
+2. Grid
+3. Two sequences
 
 ## Common recurrence relations
 
