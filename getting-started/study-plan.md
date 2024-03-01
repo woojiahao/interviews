@@ -36,8 +36,8 @@ While it is good if you are "discover" these patterns yourself, having them form
 
 ### Notation
 
-* Questions marked with :star: require LeetCode premium
-* Questions marked with :triangular\_flag\_on\_post: are problems that I found incredibly tricky and often tapped out
+* :star: : requires LeetCode premium
+* :triangular\_flag\_on\_post: : problems that I found incredibly tricky and often tapped out
 
 ### Duplicate questions
 

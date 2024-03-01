@@ -417,3 +417,11 @@ Distributing database objects across different servers; some tables belong to ce
 ### What’s the difference between hot and cold storage?
 
 Hot storage refers to data that is accessed frequently or requires fast access while cold storage is used for data rarely needed.
+
+### How do you deal with high frequency user input?
+
+Apply techniques like debouncing. The user input function can be triggered after a period of no-action to avoid repeatedly spamming the backend with requests. Alternatively, the user input function can trigger once and wait for a cooldown period (no-action).
+
+### How does debouncing differ from throttling?
+
+Throttling involves running function at regular intervals while debouncing focuses on creating a cooldown period to avoid creating too many requests.
