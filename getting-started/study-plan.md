@@ -26,6 +26,10 @@ These questions were compiled from the [Tech Interview Handbook](https://www.tec
 
 It took me about **a month** to complete the study plan (not including the dynamic programming roadmap). It's important to preface that I had completed a data structures & algorithms (DSA) course right before starting my revision so a lot of the fundamentals was fresh in my head. You may find yourself spending more/less time than I did and that is alright.
 
+{% hint style="info" %}
+Check out my dedicated blog post for the key aspects of preparing for technical interviews: [https://blog.woojiahao.com/post/technical-interview-systems/](https://blog.woojiahao.com/post/technical-interview-systems/)
+{% endhint %}
+
 If you are not familiar with fundamental DSA, it is recommended that you read a book on DSA before diving into LeetCode as it will help you better understand how to apply the data structures/algorithms to the problems. You can find my recommendations in the [faqs.md](faqs.md "mention").
 
 ## How to use?
