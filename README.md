@@ -31,7 +31,7 @@ My name is Jia Hao. I am a computer science undergraduate from the National Univ
 
 Before May 2023, I was a technical interviewing newbie. Although I had years of experience developing software, I was barely able to solve easy problems. This is because interviewing requires a completely different set of skills. While I was very fortunate to have still landed an internship for summer 2023, I realized that my interviewing skills were lacking and that spurred me to start taking interview preparation seriously.
 
-I devised methods of studying, combining hundreds of resources to develop a strong foundation in many aspects of technical interviews. Thankfully, my effort paid off and I was able to land **four** internship offers from large companies (one HFT, one MANGA, two big techs) for summer 2024.
+I devised methods of studying, combining hundreds of resources to develop a strong foundation in many aspects of technical interviews. Thankfully, my effort paid off and I was able to land internship offers from companies like Citadel, Google, and Palantir.
 
 I am creating this guide to consolidate my learning and to share this learning with others. I hope that this guide can help accompany you on your own technical interviewing journey and that you are able to land the internship/job of your dreams.
 
