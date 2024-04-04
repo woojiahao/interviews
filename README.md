@@ -25,6 +25,10 @@ layout:
 
 > Internship hunting and interview preparation takes a lot of practice and a whole lot of luck. While it is easy to feel discouraged when you receive rejection after rejection, it is keep your head high regardless and to continue pushing onward.&#x20;
 
+{% hint style="info" %}
+I have posted a blog post about the "meta-process" of preparing for technical interviews that you can find here: [https://blog.woojiahao.com/post/technical-interview-systems/](https://blog.woojiahao.com/post/technical-interview-systems/)
+{% endhint %}
+
 ## Who am I?
 
 My name is Jia Hao. I am a computer science undergraduate from the National University of Singapore.&#x20;
@@ -51,7 +55,7 @@ This guide is not all powerful and you will not become a technical interview exp
 
 If you wish to contribute to this guide, have found errors in my notes, or have questions about this guide or for me, please drop me an email at [woojiahao1234@gmail.com](mailto:woojiahao1234@gmail.com).
 
-If you have used this guide to land yourself an internship or just enjoyed reading it, feel free to drop me an email as well, I would love to learn how others are using this guide!
+If you have used this guide to land yourself an internship or just enjoyed reading it, feel free to drop me an email as well, I would love to learn how others are using this guide! You may also consider starring the [Github repository](https://github.com/woojiahao/interviews).
 
 ## Acknowledgements
 
